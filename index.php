@@ -19,76 +19,11 @@ session_start();
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>		
- <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5"> 
-                <a href="<?php echo getBaseUrl();?>/index.php"><img src="<?php echo getBaseUrl();?>/Images/metashoplogo.png"  style="margin-left: 0%"  width="110%" height="60"  title="source: imgur.com" alt="{{$lang.project_name}}" id="logo-changer" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    </br>
-                    
-						
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo getBaseUrl();?>/Home">Home</a></li>
-						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Products</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/motherboards">Motherboards</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/RAM">RAM</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/cases.html">Cases</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/CPU.html">CPU</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/gpu.html">GPU</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/power supply.html">PSU</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ssd.html">Storage</a></li>
-                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/cooler.html">Coolers</a></li>
-                            </ul>
-                        </li>
-                    
-                    <?php
-                    //var_dump($_SESSION);
-                        if (isset($_SESSION['loggedin']))
-                    {
-                
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo getBaseUrl();?>/Register/logout">Logout</a></li>'; 
-                        //we need to show the profile part because we are loggged in
-                        echo '<style>
-                        ul#profile-menu{display:flex;}
-                        </style>';   
+
+    <?php
+    include('nav.php');
+    ?>
 					
-                    }
-                    else
-                    {
-                        echo '<style>
-                        ul#profile-menu{display:none;}
-                        </style>';
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo'/Register/register">Register</a></li>';
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo '/Register/login">Login</a></li>';
-                    }
-                    ?>
-                    </ul>
-					</div>
-			<!-- Search-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<form class="example" action="search.php" method="get" style="margin:left;" >
-			<input type="search" placeholder="Search..." name="search" id="search">
-			<button type="submit" name="submit" id="submit" value="read"><i class="fa fa-search"></i></button>
-			</form>
-			</div>
-			<!-- Profile-->
-            <ul id="profile-menu" class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-			<img src="<?php echo getBaseUrl();?>/Images/avatar.jpg" style="margin-left:65%"  width="3%" height="3%">
-            <form class="d-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><em>Profile</em></a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li> <i class="bi-cart-fill me-1"style="margin-left:5%"><a class="dropdown-item" href="<?php echo getBaseUrl();?>/cart.html">Cart</a></li></i> 
-                        <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/account_settings">Account Settings</a></li>                              
-                    </ul>
-                </li>
-            </form>
-			</ul>
-        </nav>
-		
         <!-- Header-->
         <header>
 		<link type="image" href="./products2.jpg" />
