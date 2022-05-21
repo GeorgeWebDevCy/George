@@ -44,7 +44,7 @@ if ($row[6]==0) {
 
 Header('Location:'.getBaseUrl().'/Home');
 } else{
-Header('Location:'.getBaseUrl().'/homeadmin.html');
+Header('Location:'.getBaseUrl().'/homeadmin.php');
 }  
 
 } else {
