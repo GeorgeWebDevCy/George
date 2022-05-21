@@ -26,9 +26,9 @@ if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 			}
 
             if ( $_SESSION["level"]==0) {
-                Header('Location:'.getBaseUrl().'/Home');
+                //Header('Location:'.getBaseUrl().'/Home');
                 } else{
-                    Header('Location:'.getBaseUrl().'/homeadmin.html');
+                    //Header('Location:'.getBaseUrl().'/homeadmin.html');
                 }  
                 
                 } else {
