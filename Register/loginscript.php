@@ -1,7 +1,12 @@
 <?php  
 require('../includes/db.php');
 include('../includes/functions.php');
-
+if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
+	
+    // Assigning POST values to variables.
+    $username = $_POST['user_id'];
+    $password = $_POST['user_pass'];
+    
 
 $sql = "SELECT * FROM 'user_login` WHERE username='$username'";
 if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
