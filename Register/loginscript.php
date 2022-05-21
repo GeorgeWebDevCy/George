@@ -32,7 +32,7 @@ if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
                 }  
                 
                 } else {
-                echo login_error_popup("Username or password seems to be incorrect!");
+                //echo login_error_popup("Username or password seems to be incorrect!");
                 }
                 
 
