@@ -34,31 +34,31 @@
         <table border="0.5" >
             <tr>
                 <td><label for="user_id"><b><em>User Name:</em></b></label></td>
-                <td><input type="text" name="user_id" id="user_id"></td>
+                <td><input type="text" class="form-control" name="user_id" id="user_id"></td>
             </tr>
 			<br>
 			</br>
             <tr>
                 <td><label for="user_pass"><b><em>Password:</em></b></label></td>
-                <td><input type="password" name="user_pass" id="user_pass"></input></td>
+                <td><input type="password" class="form-control" name="user_pass" id="user_pass"></input></td>
             </tr>
 			</br>
 			<tr>
                 <td><label for="user_pass"><b><em>Country:</em></b></label></td>
-                <td><input type="country" name="user_country" id="user_country"></input></td>
+                <td><input type="country" class="form-control" name="user_country" id="user_country"></input></td>
             </tr>
 			<tr>
                 <td><label for="user_pass"><b><em>Email:</em></b></label></td>
-                <td><input type="email" name="user_email" id="user_email"></input></td>
+                <td><input type="email" class="form-control" name="user_email" id="user_email"></input></td>
             </tr>
 			<tr>
                 <td><label for="user_pass"><b><em>Telephone:</em></b></label></td>
-                <td><input type="telephone" name="user_telephone" id="user_telephone"></input></td>
+                <td><input type="telephone" class="form-control" name="user_telephone" id="user_telephone"></input></td>
             </tr>
             <tr>
 				
-                <td><input type="submit" value="Register" />
-                <td><input type="reset" value="Reset"/>
+                <td><input type="submit" class="btn btn-primary" value="Register" />
+                <td><input type="reset" class="btn btn-secondary" value="Reset"/>
 				
             </tr>
         </table>

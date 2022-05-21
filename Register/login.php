@@ -32,26 +32,28 @@
 </br>
 </br>
 </br>
+<div class="form-group">
     <form id="login-form" method="post" action="loginscript.php" >
         <table>
             <tr>
                 <td><label for="user_id"><b><em>User Name:</em></b></label></td>
-                <td><input type="text" name="user_id" id="user_id"></td>
+                <td><input type="text" class="form-control" name="user_id" id="user_id"></td>
             </tr>
             <tr>
                 <td><label for="user_pass"><b><em>Password:</em></b></label></td>
-                <td><input type="password" name="user_pass" id="user_pass"></input></td>
+                <td><input type="password" class="form-control" name="user_pass" id="user_pass"></input></td>
             </tr>
             <tr>
-                <td><input style="margin-left:00px;" type="submit" value="Login" /></td>
-                <td><input style="margin-left:140px;" type="reset" value="Reset"/></td>
+                <td><input style="margin-left:00px;"  type="submit" class="btn btn-primary" value="Login" /></td>
+                <td><input style="margin-left:140px;" type="reset" class="btn btn-secondary" value="Reset"/></td>
             </tr>
 			<tr>
-			<td><input style="margin-left:90px;" type="checkbox" name="rememberusername" id="rememberusername" value="1" /></td>
+			<td><input class="form-check-label" style="margin-left:90px;" type="checkbox" class="form-check-input" name="rememberusername" id="rememberusername" value="1" /></td>
 			<td><label style="margin-left:20px;" for="rememberusername"><em>Remember Me</em></label> </td>
 			</tr>
         </table>
     </form>
+</div>
 </div>
 <br>
 <br>
