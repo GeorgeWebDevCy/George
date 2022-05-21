@@ -32,7 +32,7 @@
                         if (isset($_SESSION['loggedin']))
                     {
                 
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo getBaseUrl();?>/Register/logout">Logout</a></li>'; 
+                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo '/Register/logout">Logout</a></li>';
                         //we need to show the profile part because we are loggged in
                         echo '<style>
                         ul#profile-menu{display:flex;}
