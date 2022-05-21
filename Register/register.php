@@ -61,7 +61,7 @@
                 <td><input type="reset" class="btn btn-secondary" value="Reset"/>
 				
             </tr>
-        </table>
+        </table> 
     </form>
 </div>
 <br>
