@@ -45,8 +45,7 @@
 			</br>
 			<tr>
                 <td><label for="user_pass"><b><em>Country:</em></b></label></td>
-                <td><select class="selectpicker countrypicker" name="user_country" id="user_country"></select></td>
-                <!--<td><input type="country" class="form-control" name="user_country" id="user_country"></input></td>-->
+                <td><input type="country" class="form-control" name="user_country" id="user_country"></input></td>
             </tr>
 			<tr>
                 <td><label for="user_pass"><b><em>Email:</em></b></label></td>
