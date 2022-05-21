@@ -17,8 +17,8 @@
 </head>
 <body>
 <?php
-    include('nav.php');
-    include('search.php');
+    include('../nav.php');
+    include('../search.php');
     ?>
 
 
