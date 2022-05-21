@@ -61,8 +61,8 @@ session_start();
                         echo '<style>
                         ul#profile-menu{display:none;}
                         </style>';
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'.getBaseUrl();.'/Register/register">Register</a></li>';
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'.getBaseUrl();.'/Register/login">Login</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'?><?php echo getBaseUrl();.'/Register/register">Register</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'?><?php echo getBaseUrl();.'/Register/login">Login</a></li>';
                     }
                     ?>
                     </ul>
