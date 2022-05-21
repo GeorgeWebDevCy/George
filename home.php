@@ -1,6 +1,9 @@
 <?php
 //We always need to start the session so that we can access any existing Session Data. We might land here as already loggedin
 session_start();
+include('nav.php');
+include('search.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,11 +20,7 @@ session_start();
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>		
-    <?php
-    include('nav.php');
-    include('search.php');
-    ?>		
+    <body>			
         <!-- Header-->
         <header>
 		<link type="image" href="./products2.jpg" />
