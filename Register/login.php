@@ -15,8 +15,8 @@
 </head>
 <body>
 <?php
-    include('nav.php');
-    include('search.php');
+    include('../nav.php');
+    include('../search.php');
     ?>
 <b>MetaShop Team: ®</b>
 <h6>Welcome!</h6><br></br>
