@@ -6,8 +6,11 @@ if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
     // Assigning POST values to variables.
     $username = $_POST['user_id'];
     $password = $_POST['user_pass'];
-    
+
+    var_dump($_POST);
+}    
 /*
+
 $sql = "SELECT * FROM 'user_login` WHERE username='$username'";
 if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
             $sql .= " AND password = '" . md5($_POST["user_pass"]) . "'";
