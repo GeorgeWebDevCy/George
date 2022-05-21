@@ -25,6 +25,18 @@ $_SESSION["userid"] = $row[0]; // added this to read user id
 $_SESSION["username"] = $row[1];
 $_SESSION["level"] = $row[6];
 
+/**
+ * Set cookie if user clicked remeber
+ */
+if(!empty($_POST["rememberusername"])) {
+    setcookie ("rememberusernamecookie",$_POST["rememberusername"],time()+ (10 * 365 * 24 * 60 * 60)); //set a cookie called rememberusername with name rememberusernamecookie to the current time + 10 years
+} else { //;eave cookie empty
+    if(isset($_COOKIE["rememberusernamecookie"])) {
+        setcookie ("rememberusernamecookie","");
+    }
+/*
+ * redirect according to user level
+*/ 
 if ($row[6]==0) {
 
 Header('Location:'.getBaseUrl().'/Home');
