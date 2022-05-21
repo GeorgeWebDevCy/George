@@ -22,6 +22,7 @@ session_start();
 
     <?php
     include('nav.php');
+    include('search.php');
     ?>
 					
         <!-- Header-->
