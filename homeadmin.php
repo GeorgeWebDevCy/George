@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title> MetaShop &copy;</title>
         <!-- Favicon-->
-        <link rel="icon" href="http://localhost/Metashop/Images/tablg.png" type="image/icon type">
+        <link rel="icon" href="<?php echo getBaseUrl();?>/Images/tablg.png" type="image/icon type">
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -21,7 +21,7 @@
         <!-- Header-->
         <header>
 		<link type="image" href="./products2.jpg" />
-		<img src = "http://localhost/MetaShop/Images/products2.jpg" width="100%" height="550" >
+		<img src = "<?php echo getBaseUrl();?>/Images/products2.jpg" width="100%" height="550" >
          </header>   
         
 		<!-- ADMIN PANEL -->
@@ -35,21 +35,21 @@
 						 <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b><em>User Management Functionalities</em></b></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="http://localhost/Metashop/ADMIN/add/adduser.html">Add</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/Metashop/ADMIN/edit/edituser.html">Edit</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/Metashop/ADMIN/delete/deleteuser.html">Delete User</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/add/adduser.html">Add</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/edit/edituser.html">Edit</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/delete/deleteuser.html">Delete User</a></li>
                             </ul>
                         </li>
 						<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b><em>Content Management</b></em></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="http://localhost/Metashop/ADMIN/AddContent/addcontent.html">Add</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/Metashop/ADMIN/EditContent/editcontent.html">Edit</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/ADMIN/DeleteContent/deletecontent.html">Delete Content</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/AddContent/addcontent.html">Add</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/EditContent/editcontent.html">Edit</a></li>
+                                <li><a class="dropdown-item" href="<?php echo getBaseUrl();?>/ADMIN/DeleteContent/deletecontent.html">Delete Content</a></li>
                             </ul>
                         </li>
 						<li class="nav-item"><a class="nav-link active" aria-current="page" href=""><b><em>Order Management</b></em></a></li>
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost/MetaShop/ADMIN/admin_settings.html"><b><em>Settings</b></em></a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo getBaseUrl();?>/ADMIN/admin_settings.html"><b><em>Settings</b></em></a></li>
                     </ul>
 					</div>
 				</a>
@@ -58,7 +58,7 @@
 		
         <!-- Section-->
         <section class="py-5">
-		 <!img src = "http://localhost/MetaShop/Images/recent.JPG" width="600" height="95">
+		 <!img src = "<?php echo getBaseUrl();?>/Images/recent.JPG" width="600" height="95">
             <div class="container px-4 px-lg-5 mt-5">
 			<div>
 				 <h1 style="color:blue;margin-left:00px;" > <em>Popular Items</em> </h1>
@@ -68,7 +68,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="http://localhost/MetaShop/AMD/ryzen"> <img class="card-img-top" src="http://localhost/MetaShop/Images/ryzen.jpg" alt="..." /> </a>
+                            <a href="<?php echo getBaseUrl();?>/AMD/ryzen"> <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/ryzen.jpg" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -81,7 +81,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/AMD/ryzen">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/AMD/ryzen">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="http://localhost/Metashop/Intel/Arc.html"><img class="card-img-top" src="http://localhost/MetaShop/Images/intel.jfif" alt="..." /></a>
+                            <a href="<?php echo getBaseUrl();?>/Intel/Arc.html"><img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/intel.jfif" alt="..." /></a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -112,7 +112,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/Metashop/Intel/Arc.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Intel/Arc.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="http://localhost/Metashop/Radeon/radeon.html"> <img class="card-img-top" src="http://localhost/MetaShop/Images/radeon.jpg" alt="..." /> </a>
+                            <a href="<?php echo getBaseUrl();?>/Radeon/radeon.html"> <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/radeon.jpg" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -135,7 +135,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/Metashop/Radeon/radeon.html ">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Radeon/radeon.html ">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="http://localhost/Metashop/Razer/razer.html">   <img class="card-img-top" src="http://localhost/MetaShop/Images/razer.PNG" alt="..." /> </a>
+                            <a href="<?php echo getBaseUrl();?>/Razer/razer.html">   <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/razer.PNG" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -188,7 +188,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/Metashop/Razer/razer.html">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Razer/razer.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="http://localhost/Metashop/RTX/rtx.html">     <img class="card-img-top" src="http://localhost/MetaShop/Images/R.PNG" alt="..." /> </a>
+                            <a href="<?php echo getBaseUrl();?>/RTX/rtx.html">     <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/R.PNG" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -211,14 +211,14 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/Metashop/RTX/rtx.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/RTX/rtx.html">View options</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="http://localhost/Metashop/Asus/asus.html">    <img class="card-img-top" src="http://localhost/MetaShop/Images/asus1.PNG" alt="..." /> </a>
+                            <a href="<?php echo getBaseUrl();?>/Asus/asus.html">    <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/asus1.PNG" alt="..." /> </a>
 
 
 
@@ -242,7 +242,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/Metashop/Asus/asus.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Asus/asus.html">View options</a></div>
                             </div>
                         </div>
                     </div>
