@@ -13,7 +13,7 @@
 
 <?php
 
-include('db.php');
+include('/includes/db.php');
 
 if (!empty($_GET['submit'])) {
 
