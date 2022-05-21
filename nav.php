@@ -1,5 +1,5 @@
 <?php
-    include_once('/includes/functions.php'); //need functions to load prenav because BaseUrl function needs to be called
+    include_once('includes/functions.php'); //need functions to load prenav because BaseUrl function needs to be called
     
     ?> 
  <!-- Navigation-->
