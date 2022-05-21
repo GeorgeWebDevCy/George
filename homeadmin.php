@@ -1,3 +1,7 @@
+<?php
+    include('nav.php');
+    include('search.php');
+    ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,10 +18,6 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>		
-        <?php
-    include('nav.php');
-    include('search.php');
-    ?>
         <!-- Header-->
         <header>
 		<link type="image" href="./products2.jpg" />
