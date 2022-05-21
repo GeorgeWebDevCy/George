@@ -14,55 +14,10 @@
 
 </head>
 <body>
-<!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5"> 
-                <a href="http://localhost/Metashop/home.php"><img src="http://localhost/Metashop/Images/metashoplogo.png"  style="margin-left: 0%"  width="110%" height="60"  title="source: imgur.com" alt="{{$lang.project_name}}" id="logo-changer" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    </br>
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost/MetaShop/Register/register">Register</a></li>
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost/MetaShop/Register/login">Login</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost/MetaShop/Home">Home</a></li>
-						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Products</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/motherboards">Motherboards</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/RAM">RAM</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/cases.html">Cases</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/CPU.html">CPU</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/gpu.html">GPU</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/power supply.html">PSU</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/ssd.html">Storage</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/MetaShop/cooler.html">Coolers</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-					</div>
-			<!-- Search-->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<form class="example" action="search.php" method="get" style="margin:left;" >
-			<input type="search" placeholder="Search..." name="search" id="search">
-			<button type="submit" name="submit" id="submit" value="read"><i class="fa fa-search"></i></button>
-			</form>
-			</div>
-			<!-- Profile-->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-			<img src="http://localhost/MetaShop/Images/avatar.jpg" style="margin-left:65%"  width="3%" height="3%">
-            <form class="d-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><em>Profile</em></a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li> <i class="bi-cart-fill me-1"style="margin-left:5%"><a class="dropdown-item" href="http://localhost/MetaShop/">Cart</a></li></i> 
-                        <li><a class="dropdown-item" href="http://localhost/MetaShop/account_settings">Account Settings</a></li>                              
-                    </ul>
-                </li>
-            </form>
-			</ul>
-        </nav>
-        
-
+<?php
+    include('nav.php');
+    include('search.php');
+    ?>
 <b>MetaShop Team: ®</b>
 <h6>Welcome!</h6><br></br>
 </br>
