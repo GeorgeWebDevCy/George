@@ -1,3 +1,7 @@
+<?php
+    include_once('/includes/functions.php'); //need functions to load prenav because BaseUrl function needs to be called
+    
+    ?> 
  <!-- Navigation-->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5"> 
