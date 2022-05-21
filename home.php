@@ -1,9 +1,6 @@
 <?php
 //We always need to start the session so that we can access any existing Session Data. We might land here as already loggedin
 session_start();
-include('nav.php');
-include('search.php');
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,17 +11,21 @@ include('search.php');
         <meta name="author" content="" />
         <title> MetaShop &copy;</title>
         <!-- Favicon-->
-        <link rel="icon" href="<?php echo getBaseUrl();?>/Images/tablg.png" type="image/icon type">
+        <link rel="icon" href="http://localhost/MetaShop/Images/tablg.png" type="image/icon type">
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>			
+    <body>		
+    <?php
+    include('nav.php');
+    include('search.php');
+    ?>		
         <!-- Header-->
         <header>
 		<link type="image" href="./products2.jpg" />
-		<img src = "<?php echo getBaseUrl();?>/Images/products2.jpg" width="100%" height="550" >
+		<img src = "http://localhost/MetaShop/Images/products2.jpg" width="100%" height="550" >
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
 				
@@ -33,7 +34,7 @@ include('search.php');
         </header>
         <!-- Section-->
         <section class="py-5">
-		 <!img src = "<?php echo getBaseUrl();?>/Images/recent.JPG" width="600" height="95">
+		 <!img src = "http://localhost/MetaShop/Images/recent.JPG" width="600" height="95">
             <div class="container px-4 px-lg-5 mt-5">
 			<div>
 				 <h1 style="color:blue;margin-left:00px;" > <em>Popular Items</em> </h1>
@@ -43,7 +44,7 @@ include('search.php');
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/AMD/ryzen"> <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/ryzen.jpg" alt="..." /> </a>
+                            <a href="http://localhost/MetaShop/AMD/ryzen"> <img class="card-img-top" src="http://localhost/MetaShop/Images/ryzen.jpg" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -56,7 +57,7 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/AMD/ryzen">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/AMD/ryzen">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -65,7 +66,7 @@ include('search.php');
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/Intel/Arc.html"><img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/intel.jfif" alt="..." /></a>
+                            <a href="http://localhost/MetaShop/Intel/Arc.html"><img class="card-img-top" src="http://localhost/MetaShop/Images/intel.jfif" alt="..." /></a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -87,7 +88,7 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Intel/Arc.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/Intel/Arc.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -96,7 +97,7 @@ include('search.php');
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/Radeon/radeon.html"> <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/radeon.jpg" alt="..." /> </a>
+                            <a href="http://localhost/MetaShop/Radeon/radeon.html"> <img class="card-img-top" src="http://localhost/MetaShop/Images/radeon.jpg" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -110,7 +111,7 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Radeon/radeon.html ">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/Radeon/radeon.html ">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -142,7 +143,7 @@ include('search.php');
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/Razer/razer.html">   <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/razer.PNG" alt="..." /> </a>
+                            <a href="http://localhost/Metashop/Razer/razer.html">   <img class="card-img-top" src="http://localhost/MetaShop/Images/razer.PNG" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -163,7 +164,7 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Razer/razer.html">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/Razer/razer.html">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@ include('search.php');
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/RTX/rtx.html">     <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/R.PNG" alt="..." /> </a>
+                            <a href="http://localhost/MetaShop/RTX/rtx.html">     <img class="card-img-top" src="http://localhost/MetaShop/Images/R.PNG" alt="..." /> </a>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -186,14 +187,14 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/RTX/rtx.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/RTX/rtx.html">View options</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="<?php echo getBaseUrl();?>/Asus/asus.html">    <img class="card-img-top" src="<?php echo getBaseUrl();?>/Images/asus1.PNG" alt="..." /> </a>
+                            <a href="http://localhost/MetaShop/Asus/asus.html">    <img class="card-img-top" src="http://localhost/MetaShop/Images/asus1.PNG" alt="..." /> </a>
 
 
 
@@ -217,7 +218,7 @@ include('search.php');
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div></br>
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="<?php echo getBaseUrl();?>/Asus/asus.html">View options</a></div>
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://localhost/MetaShop/Asus/asus.html">View options</a></div>
                             </div>
                         </div>
                     </div>
