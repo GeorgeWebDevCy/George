@@ -15,6 +15,10 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
 $row=mysqli_fetch_row($result); 
 $count = mysqli_num_rows($result);
 
+/**
+ * Set cookie if user clicked remeber
+ */
+
 if ($count == 1){
 
 session_start();
@@ -25,15 +29,14 @@ $_SESSION["userid"] = $row[0]; // added this to read user id
 $_SESSION["username"] = $row[1];
 $_SESSION["level"] = $row[6];
 
-/**
- * Set cookie if user clicked remeber
- */
 if(!empty($_POST["rememberusername"])) {
     setcookie ("rememberusernamecookie",$_POST["rememberusername"],time()+ (10 * 365 * 24 * 60 * 60)); //set a cookie called rememberusername with name rememberusernamecookie to the current time + 10 years
 } else { //;eave cookie empty
     if(isset($_COOKIE["rememberusernamecookie"])) {
         setcookie ("rememberusernamecookie","");
     }
+}
+
 /*
  * redirect according to user level
 */ 
