@@ -44,7 +44,7 @@
                         echo '<style>
                         ul#profile-menu{display:none;}
                         </style>';
-                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo'/Register/register">Register</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo '/Register/register">Register</a></li>';
                         echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="';?><?php echo getBaseUrl();echo '/Register/login">Login</a></li>';
                     }
                     ?>
