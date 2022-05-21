@@ -1,5 +1,5 @@
 <?php  
-require('db.php');
+require('../include/db.php');
 include('../include/functions.php');
 
 if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
