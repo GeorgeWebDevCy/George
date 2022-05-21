@@ -27,9 +27,9 @@ $_SESSION["level"] = $row[6];
 
 if ($row[6]==0) {
 
-Header('Location:'.getBaseUrl();.'/Home');
+Header('Location:'.getBaseUrl().'/Home');
 } else{
-Header('Location:'.getBaseUrl();.'/homeadmin.html');
+Header('Location:'.getBaseUrl().'/homeadmin.html');
 }  
 
 } else {
