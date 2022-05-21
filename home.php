@@ -227,5 +227,5 @@ session_start();
         </section>
 		 
         <?php
-        include('../footer.php');
+        include('footer.php');
         ?>
